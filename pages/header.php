@@ -1,34 +1,40 @@
 
 <header class="flex a_center" id="header">
-  <nav class="flex a_center">
-    <ul class="flex a_center j_around" id="Menu">
-
 <!-- ========================== IF WE ARE CONNECTED ============================= -->
 
-      <?php if (isset($_SESSION['id'])) { ?>
+  <?php if (isset($_SESSION['id'])) { ?>
 
-        <li class="menu-html"> <a href='/Project Pool 2/discussion/index.php'>Acceuil</a> </li>
-        <li class="menu-html"> <a href='/Project Pool 2/discussion/pages/discussion.php'>Discussion</a> </li>
-        <li class="menu-html"> <a href="#" class="hoversub"> Profil <i class='fas fa-user-alt'></i> </a>
-          <ul class="submenu flex a_center">
-            <li id="submenu_deconnexion"> <a class="" href="/Project Pool 2/discussion/pages/profil.php">Mon Profil</a></li>
+    <nav class="flex a_center">
+      <ul class="flex a_center">
+        <li id="Title_Page">JONADEVYS</li>
+      </ul>
+
+      <ul class="flex j_around a_center">
+        <li>Discussion</li>
+        <li>Profil</li>
+      </ul>
+    </nav>
+
+  <!--=========================== IF WE ARE DOESN'T CONNECTED =============================== -->
+  <?php } else { ?>
+
+    <nav class="flex a_center j_around">
+      <ul class="flex a_center">
+        <li id="Title_Page">JONADEVYS</li>
+      </ul>
+
+      <ul class="flex j_around a_center">
+        <li id="Discussion_Menu" class="flex j_center flex_column a_center">Discussion</li>
+        <li id="Profil_Menu" class="flex flex_column j_center a_center"> <a href="#" id="Profil_submenu" class="flex a_center j_center"> Profil </a>
+          <ul id="submenu">
+            <li> <a href="#">Inscription</a> </li>
+            <li> <a href="#">Connexion</a> </li>
           </ul>
         </li>
+      </ul>
+    </nav>
 
-<!--=========================== IF WE ARE DOESN'T CONNECTED =============================== -->
-      <?php } else { ?>
-
-        <li class="menu-html"> <a href='/Project Pool 2/discussion/index.php'>Acceuil</a> </li>
-        <li class="menu-html"> <a href='/Project Pool 2/discussion/pages/discussion.php'>Discussion</a> </li>
-        <li class="menu-html"> <a href="#" class="hoversub"> Profil <i class='fas fa-user-alt'></i> </a>
-          <ul class="submenu flex a_center">
-            <li id="submenu_connexion"> <a href='/Project Pool 2/discussion/pages/connexion.php'>Connexion</a> </li>
-            <li id="submenu_inscription"> <a href='/Project Pool 2/discussion/pages/inscription.php'>Inscription</a> </li>
-          </ul>
-        </li>
 
 <!-- ==================================== END ==================================== -->
       <?php } ?>
-    </ul>
-  </nav>
 </header>

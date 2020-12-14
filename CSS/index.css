@@ -1,0 +1,21 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+#Main_index{
+  margin-top: 5vh;
+}
+#Davy_Jones{
+  width: 100%;
+  height: 150vh;
+  background: yellow;
+}
+#Davy_Jones h1{
+  margin: 0;
+  padding: 0;
+}
