@@ -25,10 +25,10 @@
 
       <ul class="flex j_around a_center">
         <li id="Discussion_Menu" class="flex j_center flex_column a_center">Discussion</li>
-        <li id="Profil_Menu" class="flex flex_column j_center a_center"> <a href="#" id="Profil_submenu" class="flex a_center j_center"> Profil </a>
+        <li id="Profil_Menu" class="flex flex_column j_center a_center"> <a href="#" id="Profil_submenu" class="flex a_center j_center">Profil </a>
           <ul id="submenu">
-            <li> <a href="#">Inscription</a> </li>
-            <li> <a href="#">Connexion</a> </li>
+            <li> <a href="pages/inscription.php">Inscription</a> </li>
+            <li> <a href="pages/connexion.php">Connexion</a> </li>
           </ul>
         </li>
       </ul>
