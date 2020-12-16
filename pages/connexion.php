@@ -1,6 +1,8 @@
 <?php
 require_once("../configs/config.php");
-
+if (isset($_POST['submit'])) {
+  $error = connexion($_POST['login_user'], $_POST['password_user'], $bdd);
+}
 ?>
 
 
@@ -24,17 +26,18 @@ require_once("../configs/config.php");
 
 
 <!-- =======================================MAIN=============================================== -->
-    <main class="flex align_center flex_column justify_around" id="main_connexion">
+    <main class="flex a_center column j_around" id="main_connexion">
         <h1>Connexion</h1>
+        <?php if (isset($error)) { echo "<h2>$error</h2>"; }?>
 
 
-        <form action="connexion.php" method="post" id="connexion_formulaire" class="flex align_center flex_column justify_around">
-            <section class="flex flex_column align_center">
+        <form action="connexion.php" method="post" id="connexion_formulaire" class="flex a_center column j_around">
+            <section class="flex column a_center">
                 <label for="login_user">Login :</label>
                 <input type="text" name="login_user">
             </section>
 
-             <section class="flex flex_column align_center">
+             <section class="flex column a_center">
                     <label for="password_user">Password :</label>
                     <input type="password" name="password_user">
             </section>

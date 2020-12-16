@@ -20,30 +20,30 @@
     <script src="https://kit.fontawesome.com/56188ecd90.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<?php require_once('../configs/header.php'); ?>
+<?php require_once('../pages/header.php'); ?>
 
 
 
-    <main class="flex align_center flex_column justify_around" id="main_inscription">
+    <main class="flex a_center column j_around" id="main_inscription">
         <h1>Formulaire d'Inscription</h1>
         <?php if (isset($error)) {
             echo "<h2>$error</h2>";
         }?>
-        <form action="inscription.php" method="post" id="formulaire_inscriptions" class="flex align_center flex_column justify_around">
-            <section class="flex flex_column align_center">
+        <form action="inscription.php" method="post" id="formulaire_inscriptions" class="flex a_center column j_around">
+            <section class="flex column a_center">
                 <label for="login_user">Login :</label>
                 <input type="text" name="login_user" value="<?php if (isset($login)) { echo $login;  } ?>">
             </section>
 
 
 
-            <section class="flex justify_around align_around">
-                <article class="flex flex_column justify_around align_center">
+            <section class="flex j_around a_around">
+                <article class="flex column j_around a_center">
                     <label for="password_user">Password :</label>
                     <input type="password" name="password_user">
                 </article>
 
-                <article class="flex flex_column justify_around align_center">
+                <article class="flex column j_around a_center">
                     <label for="confirmpassword">Confirm Password :</label>
                     <input type="password" name="confirmpassword">
                 </article>
@@ -56,6 +56,6 @@
 
 
 
-    <?php require_once('../configs/footer.php') ?>
+    <?php require_once('../pages/footer.php') ?>
 </body>
 </html>

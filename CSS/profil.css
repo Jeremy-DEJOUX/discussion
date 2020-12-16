@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+}
+
+body{
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+
+
+/* ==================================MAIN================================ */
+
+#main_connexion{
+  margin-top: 5vh;
+  width: 100%;
+  height: 90vh;
+}
+
+#formulaire_edition{
+    width: 35%;
+    height: 50vh;
+    padding: 5vh;
+    background-color: rgba(20,20,20,0.8);
+    color: white;
+}
+
+#formulaire_edition section{
+    width: 100%;
+}
+#formulaire_edition label{
+    margin-bottom: 5px;
+}

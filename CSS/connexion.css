@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+
+/* ==================================MAIN CONNEXION=================================== */
+#main_connexion{
+    margin-top: 5vh;
+    width: 100%;
+    height: 90vh;
+    font-family: 'Staatliches', cursive;
+}
+/* ===================================FORMULAIRE CONNEXION========================= */
+#connexion_formulaire{
+    width: 20%;
+    height: 30vh;
+    padding: 3vh;
+    background-color: rgba(20,20,20,0.8);
+    color: white;
+}
