@@ -8,11 +8,7 @@ if (isset($_POST['ajouter'])) {
 }
 $querry = mysqli_query($bdd, 'SELECT messages.id_utilisateur , utilisateurs.login, messages.message, messages.date FROM utilisateurs INNER JOIN messages ON messages.id_utilisateur = utilisateurs.id ORDER BY date DESC');
 
-// echo "<pre>";
-// print_r($bdd);
-// echo "</pre>";
-
- ?>
+?>
 
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
